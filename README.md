@@ -10,13 +10,11 @@ This project demonstrates an end-to-end CI/CD pipeline for a containerized FastA
 
 The pipeline automatically runs tests and builds a Docker image on every push to the main branch.
 
-⸻
 
 Architecture
 
 Developer Push → GitHub Actions → Run Tests → Build Docker Image → Deploy to EC2
 
-⸻
 
 Tech Stack
 	•	Python 3.10
@@ -26,7 +24,6 @@ Tech Stack
 	•	GitHub Actions
 	•	AWS EC2
 
-⸻
 
 CI/CD Workflow
 
@@ -39,7 +36,6 @@ On every push to main:
 
 If tests fail, Docker build does not proceed.
 
-⸻
 
 Run Locally (Docker)
 docker build -t fastapi-app .
@@ -55,7 +51,6 @@ Deployment on AWS EC2
 	4.	Build Docker image
 	5.	Run container with environment variable secrets
 
-⸻
 
 🔐 Environment-Based Secret Handling
 
